@@ -4,17 +4,51 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Projects — Taha Saleem</title>
-  <meta name="description" content="Projects by Taha Saleem — Data Science, ML, AI, Dashboards, and Applications." />
+  <meta name="description" content="Projects of Taha Saleem — Data Science undergraduate, AI & ML enthusiast.">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css" />
+  
+  <!-- AOS (Animate on Scroll) -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #f0f9ff, #e0f2fe, #f9fafb);
+    }
+    .project-card {
+      transition: transform 0.3s, box-shadow 0.3s;
+      border: none;
+      border-radius: 1rem;
+    }
+    .project-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+    }
+    .project-icon {
+      font-size: 2.5rem;
+      color: #0ea5e9;
+    }
+    .section-light { background: #ffffff; }
+    .section-alt { background: #f8fafc; }
+  </style>
 </head>
 <body>
   <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top">
     <div class="container">
-      <a class="navbar-brand" href="index.html"><i class="bi bi-braces-asterisk text-primary"></i> <strong>Taha&nbsp;Saleem</strong></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"><span class="navbar-toggler-icon"></span></button>
+      <a class="navbar-brand fw-bold" href="index.html"><i class="bi bi-braces-asterisk text-primary"></i> Taha Saleem</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
       <div class="collapse navbar-collapse" id="mainNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
@@ -27,90 +61,97 @@
     </div>
   </nav>
 
-  <!-- HERO -->
-  <header class="py-5 bg-light border-bottom">
-    <div class="container text-center">
-      <h1 class="display-5 fw-bold">Projects</h1>
-      <p class="lead text-secondary">A showcase of my work in ML, AI, Dashboards, and Data Applications</p>
-    </div>
-  </header>
-
-  <!-- PROJECTS GRID -->
-  <section class="py-5">
+  <!-- PROJECTS SECTION -->
+  <section class="py-5 section-light">
     <div class="container">
+      <h1 class="fw-bold text-center mb-5" data-aos="fade-up">Projects</h1>
       <div class="row g-4">
+
         <!-- Project 1 -->
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="card h-100 shadow-sm border-0">
-            <div class="card-body">
-              <h3 class="h5">Voice-Based Attendance System</h3>
-              <p class="text-secondary">Automated attendance system using voice recognition and pre-trained ML models.</p>
-              <a href="https://github.com/Taha-Saleem-43/Voice-Base-Attendance-system" target="_blank" class="btn btn-outline-primary btn-sm"><i class="bi bi-github"></i> Code</a>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="card project-card h-100 shadow-sm">
+            <div class="card-body text-center">
+              <i class="bi bi-mic project-icon mb-3"></i>
+              <h5 class="card-title">Voice-Based Attendance System</h5>
+              <p class="card-text">Python-based system that marks attendance using voice recognition. Built with SpeechRecognition & ML models.</p>
+              <!-- Placeholder for video -->
+              <!-- <iframe width="100%" height="200" src="https://www.youtube.com/embed/demoVideoID" frameborder="0" allowfullscreen></iframe> -->
             </div>
           </div>
         </div>
+
         <!-- Project 2 -->
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="card h-100 shadow-sm border-0">
-            <div class="card-body">
-              <h3 class="h5">Healthcare Patient Dashboard</h3>
-              <p class="text-secondary">Power BI dashboard visualizing healthcare trends and KPIs with DAX & SQL queries.</p>
-              <a href="https://github.com/Taha-Saleem-43/HeathCare-Sector-Patient-Analysis" target="_blank" class="btn btn-outline-primary btn-sm"><i class="bi bi-github"></i> Code</a>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="card project-card h-100 shadow-sm">
+            <div class="card-body text-center">
+              <i class="bi bi-people project-icon mb-3"></i>
+              <h5 class="card-title">IBM HR Analytics Predictor</h5>
+              <p class="card-text">ML project predicting employee attrition using Random Forest & Logistic Regression. Explained with SHAP & LIME.</p>
             </div>
           </div>
         </div>
+
         <!-- Project 3 -->
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="card h-100 shadow-sm border-0">
-            <div class="card-body">
-              <h3 class="h5">Tic Tac Toe AI (Alpha-Beta)</h3>
-              <p class="text-secondary">AI-powered 2-player game with Alpha-Beta pruning and optimized decision trees.</p>
-              <a href="https://github.com/Taha-Saleem-43/Tic_Tac_Toe-Alpha-Beta-Pruning-" target="_blank" class="btn btn-outline-primary btn-sm"><i class="bi bi-github"></i> Code</a>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="card project-card h-100 shadow-sm">
+            <div class="card-body text-center">
+              <i class="bi bi-file-text project-icon mb-3"></i>
+              <h5 class="card-title">Article Summarization System</h5>
+              <p class="card-text">Summarizes long blogs/news using extractive (spaCy) and abstractive (BERT/GPT) NLP methods. Evaluated with ROUGE.</p>
             </div>
           </div>
         </div>
+
         <!-- Project 4 -->
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="card h-100 shadow-sm border-0">
-            <div class="card-body">
-              <h3 class="h5">Dyno-Coder</h3>
-              <p class="text-secondary">AI-powered coding assistant deployed on Hugging Face Spaces.</p>
-              <a href="https://huggingface.co/spaces/Taha-43/Dyno-Coder" target="_blank" class="btn btn-outline-primary btn-sm"><i class="bi bi-box-arrow-up-right"></i> Demo</a>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+          <div class="card project-card h-100 shadow-sm">
+            <div class="card-body text-center">
+              <i class="bi bi-train-front project-icon mb-3"></i>
+              <h5 class="card-title">Orange Line Train Survey Analysis</h5>
+              <p class="card-text">Analyzed commuter survey data from Lahore Orange Line. Performed EDA, visualizations, and insights extraction.</p>
             </div>
           </div>
         </div>
+
         <!-- Project 5 -->
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="card h-100 shadow-sm border-0">
-            <div class="card-body">
-              <h3 class="h5">PDF Analyzer Bot</h3>
-              <p class="text-secondary">Interactive tool to analyze PDFs, deployed on Hugging Face Spaces.</p>
-              <a href="https://huggingface.co/spaces/Taha-43/PDF-Analyzer-Bot" target="_blank" class="btn btn-outline-primary btn-sm"><i class="bi bi-box-arrow-up-right"></i> Demo</a>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+          <div class="card project-card h-100 shadow-sm">
+            <div class="card-body text-center">
+              <i class="bi bi-browser-chrome project-icon mb-3"></i>
+              <h5 class="card-title">PUCIT Job Portal System</h5>
+              <p class="card-text">Django-based web portal for students to find internships and jobs. Features authentication & database integration.</p>
             </div>
           </div>
         </div>
+
         <!-- Project 6 -->
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="card h-100 shadow-sm border-0">
-            <div class="card-body">
-              <h3 class="h5">EDA & ML Projects</h3>
-              <p class="text-secondary">Exploratory Data Analysis on datasets (Titanic, Credit Card Fraud) with ML models (LogReg, Decision Trees, SVM).</p>
-              <span class="badge bg-secondary">Python</span>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="600">
+          <div class="card project-card h-100 shadow-sm">
+            <div class="card-body text-center">
+              <i class="bi bi-cpu project-icon mb-3"></i>
+              <h5 class="card-title">Brain MRI Tumor Detection</h5>
+              <p class="card-text">Built a runtime image prediction system to classify brain MRI scans for tumor presence using CNN models.</p>
             </div>
           </div>
         </div>
+
       </div>
     </div>
   </section>
 
   <!-- FOOTER -->
-  <footer class="py-4 border-top">
-    <div class="container text-center">
-      <small class="d-block">© <span id="year"></span> Taha Saleem</small>
+  <footer class="py-4 border-top text-center bg-white">
+    <div class="container">
+      <p class="mb-0">© <span id="year"></span> Taha Saleem — Built with Bootstrap</p>
     </div>
   </footer>
 
+  <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
