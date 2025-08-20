@@ -1,35 +1,65 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Taha Saleem — Data Science Portfolio</title>
-  <meta name="description" content="Taha Saleem — Data Science undergraduate building ML apps, dashboards, and AI tools. Python • SQL • Power BI • Streamlit • Gradio." />
-  <link rel="canonical" href="https://username.github.io/" />
-
-  <!-- Bootstrap 5 -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Taha Saleem — Portfolio</title>
+  <meta name="description" content="Portfolio of Taha Saleem, Data Science undergraduate, AI & ML Enthusiast.">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Bootstrap Icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  
+  <!-- AOS (Animate on Scroll) -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="assets/css/style.css">
-
+  
   <style>
-    :root { --brand: #0ea5e9; --ink:#0f172a; }
-    body { color: var(--ink); }
-    .hero { background: radial-gradient(90% 90% at 0% 0%, #e0f2fe 0%, #f8fafc 40%, #ffffff 100%); padding: 6rem 0 4rem; }
-    .tech-pill { border: 1px solid #e2e8f0; padding:.4rem .7rem; border-radius: 999px; font-size:.85rem; }
-    .project-card:hover { transform: translateY(-4px); transition: transform .2s ease; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #f0f9ff, #e0f2fe, #f9fafb);
+    }
+    .hero {
+      padding: 6rem 0 4rem;
+    }
+    .hero h1 {
+      font-weight: 700;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      color: #475569;
+    }
+    .btn-primary {
+      background-color: #0ea5e9;
+      border-color: #0ea5e9;
+    }
+    .btn-primary:hover {
+      background-color: #0284c7;
+      border-color: #0284c7;
+    }
+    .profile-pic {
+      max-width: 180px;
+      border-radius: 50%;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+    .section-light {
+      background: #ffffff;
+    }
+    .section-alt {
+      background: #f8fafc;
+    }
   </style>
 </head>
 <body>
   <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top">
     <div class="container">
-      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
-        <i class="bi bi-braces-asterisk text-primary"></i>
-        <strong>Taha&nbsp;Saleem</strong>
-      </a>
+      <a class="navbar-brand fw-bold" href="index.html"><i class="bi bi-braces-asterisk text-primary"></i> Taha Saleem</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -46,65 +76,51 @@
   </nav>
 
   <!-- HERO -->
-  <header class="hero">
+  <header class="hero text-center">
     <div class="container">
-      <div class="row align-items-center g-5">
-        <div class="col-lg-7">
-          <span class="text-uppercase text-primary fw-semibold">Data Science Undergraduate • AI & ML Enthusiast</span>
-          <h1 class="display-5 fw-bold mt-2">Turning data into <span class="text-primary">insights</span> & <span class="text-primary">products</span>.</h1>
-          <p class="lead text-secondary mt-3">I build data-driven applications, dashboards, and AI tools in Python, SQL, Power BI, Streamlit, and Gradio.</p>
-
-          <div class="d-flex gap-2 mt-3">
-            <a class="btn btn-primary btn-lg" href="projects.html"><i class="bi bi-rocket-takeoff me-2"></i>View Projects</a>
-            <a class="btn btn-outline-secondary btn-lg" href="contact.html"><i class="bi bi-envelope me-2"></i>Contact</a>
-          </div>
-
-          <div class="d-flex gap-3 mt-4">
-            <a href="https://github.com/Taha-Saleem-43" target="_blank"><i class="bi bi-github fs-3"></i></a>
-            <a href="https://www.linkedin.com/in/taha-saleem-a5697a291/" target="_blank"><i class="bi bi-linkedin fs-3"></i></a>
-            <a href="https://leetcode.com/u/_Taha_dev/" target="_blank"><i class="bi bi-code-slash fs-3"></i></a>
-          </div>
+      <div class="row align-items-center justify-content-center">
+        <div class="col-md-4 mb-4 mb-md-0" data-aos="fade-right">
+          <img src="assets/img/profile.jpg" alt="Taha Saleem" class="profile-pic img-fluid">
         </div>
-
-        <div class="col-lg-5 text-center">
-          <img src="assets/img/profile.jpg" class="img-fluid rounded-4 shadow" alt="Portrait of Taha Saleem">
+        <div class="col-md-6" data-aos="fade-left">
+          <h1 class="display-4">Hi, I’m <span class="text-primary">Taha Saleem</span></h1>
+          <p class="lead">Data Science Undergraduate | AI & ML Enthusiast</p>
+          <a href="projects.html" class="btn btn-primary btn-lg me-2">View Projects</a>
+          <a href="contact.html" class="btn btn-outline-dark btn-lg">Contact Me</a>
         </div>
       </div>
     </div>
   </header>
 
   <!-- FEATURED PROJECTS PREVIEW -->
-  <section class="py-5">
-    <div class="container">
-      <div class="d-flex align-items-center justify-content-between mb-3">
-        <h2 class="h3 mb-0">Featured Projects</h2>
-        <a class="btn btn-sm btn-outline-primary" href="projects.html">See all</a>
-      </div>
+  <section class="py-5 section-alt" data-aos="fade-up">
+    <div class="container text-center">
+      <h2 class="fw-bold mb-4">Featured Projects</h2>
       <div class="row g-4">
         <div class="col-md-4">
-          <div class="card h-100 shadow-sm project-card">
+          <div class="card shadow-sm h-100 project-card">
             <div class="card-body">
-              <h3 class="h5">Voice-Based Attendance</h3>
-              <p class="text-secondary">Automated attendance via voice recognition using pre-trained ML models.</p>
-              <a href="https://github.com/Taha-Saleem-43/Voice-Base-Attendance-system" target="_blank" class="btn btn-sm btn-outline-primary"><i class="bi bi-github"></i> Code</a>
+              <h5 class="card-title">Voice-Based Attendance System</h5>
+              <p class="card-text">Python project that automates attendance using voice recognition.</p>
+              <a href="projects.html" class="btn btn-sm btn-primary">See More</a>
             </div>
           </div>
         </div>
         <div class="col-md-4">
-          <div class="card h-100 shadow-sm project-card">
+          <div class="card shadow-sm h-100 project-card">
             <div class="card-body">
-              <h3 class="h5">Healthcare Patient Dashboard</h3>
-              <p class="text-secondary">Interactive BI dashboard visualizing patient trends and KPIs.</p>
-              <a href="https://github.com/Taha-Saleem-43/HeathCare-Sector-Patient-Analysis" target="_blank" class="btn btn-sm btn-outline-primary"><i class="bi bi-github"></i> Code</a>
+              <h5 class="card-title">IBM HR Analytics</h5>
+              <p class="card-text">Predictive model for employee attrition with Random Forest and SHAP.</p>
+              <a href="projects.html" class="btn btn-sm btn-primary">See More</a>
             </div>
           </div>
         </div>
         <div class="col-md-4">
-          <div class="card h-100 shadow-sm project-card">
+          <div class="card shadow-sm h-100 project-card">
             <div class="card-body">
-              <h3 class="h5">Tic Tac Toe — Alpha-Beta</h3>
-              <p class="text-secondary">Two-player game with Alpha-Beta pruning and optimized search trees.</p>
-              <a href="https://github.com/Taha-Saleem-43/Tic_Tac_Toe-Alpha-Beta-Pruning-" target="_blank" class="btn btn-sm btn-outline-primary"><i class="bi bi-github"></i> Code</a>
+              <h5 class="card-title">Article Summarization System</h5>
+              <p class="card-text">Summarizes blogs & news using extractive + abstractive NLP methods.</p>
+              <a href="projects.html" class="btn btn-sm btn-primary">See More</a>
             </div>
           </div>
         </div>
@@ -113,13 +129,18 @@
   </section>
 
   <!-- FOOTER -->
-  <footer class="py-4 border-top">
-    <div class="container text-center">
-      <small>© <span id="year"></span> Taha Saleem</small>
+  <footer class="py-4 border-top text-center bg-white">
+    <div class="container">
+      <p class="mb-0">© <span id="year"></span> Taha Saleem — Built with Bootstrap</p>
     </div>
   </footer>
 
+  <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
