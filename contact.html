@@ -14,7 +14,9 @@
   <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top">
     <div class="container">
       <a class="navbar-brand" href="index.html"><i class="bi bi-braces-asterisk text-primary"></i> <strong>Taha&nbsp;Saleem</strong></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"><span class="navbar-toggler-icon"></span></button>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
       <div class="collapse navbar-collapse" id="mainNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
@@ -51,22 +53,23 @@
         </div>
         <div class="col-12 col-lg-6">
           <h2 class="h4 mb-3">Send a Message</h2>
-          <form>
+          <!-- Formspree form -->
+          <form action="https://formspree.io/f/mdkdrypo" method="POST">
             <div class="mb-3">
               <label for="name" class="form-label">Name</label>
-              <input type="text" class="form-control" id="name" placeholder="Your name" required>
+              <input type="text" class="form-control" id="name" name="name" placeholder="Your name" required>
             </div>
             <div class="mb-3">
               <label for="email" class="form-label">Email</label>
-              <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
+              <input type="email" class="form-control" id="email" name="_replyto" placeholder="you@example.com" required>
             </div>
             <div class="mb-3">
               <label for="message" class="form-label">Message</label>
-              <textarea class="form-control" id="message" rows="4" placeholder="Your message..." required></textarea>
+              <textarea class="form-control" id="message" name="message" rows="4" placeholder="Your message..." required></textarea>
             </div>
             <button type="submit" class="btn btn-primary">Send</button>
           </form>
-          <p class="small text-secondary mt-2">(Form can be integrated with services like <strong>Formspree</strong> or <strong>Netlify Forms</strong> for real submissions.)</p>
+          <p class="small text-secondary mt-2">This form is powered by <a href="https://formspree.io" target="_blank">Formspree</a>. Your message will be delivered to my email.</p>
         </div>
       </div>
     </div>
