@@ -1,0 +1,191 @@
+/* ===== Skills & Expertise Page Styles ===== */
+body.skills-page {
+    background: radial-gradient(circle at top, #00141f 0%, #000 100%);
+    color: #e0e0e0;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 100px;
+    min-height: 100vh;
+}
+
+/* ===== Section Title ===== */
+.skills-header {
+    text-align: center;
+    margin-bottom: 60px;
+    padding: 40px 20px 0;
+}
+
+.skills-header h1 {
+    font-size: 3rem;
+    color: #bfeeff;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.skills-header h2 {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #aaa;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* ===== Skills Grid ===== */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1400px;
+    margin: 0 auto 80px auto;
+    padding: 0 60px;
+}
+
+/* ===== Skill Card ===== */
+.skill-card {
+    background: rgba(15, 25, 35, 0.6);
+    border-radius: 12px;
+    padding: 30px;
+    border: 1px solid rgba(0, 188, 212, 0.1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.skill-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(0, 188, 212, 0.4);
+    box-shadow: 0 8px 30px rgba(0, 188, 212, 0.2);
+}
+
+/* ===== Skill Icon ===== */
+.skill-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+/* Icon backgrounds - Using cyan/blue gradient variations */
+.icon-ml { 
+    background: linear-gradient(135deg, #00bcd4 0%, #03a9f4 100%);
+}
+
+.icon-da { 
+    background: linear-gradient(135deg, #4dd0e1 0%, #26c6da 100%);
+}
+
+.icon-dv { 
+    background: linear-gradient(135deg, #00acc1 0%, #0097a7 100%);
+}
+
+.icon-pg { 
+    background: linear-gradient(135deg, #00bcd4 0%, #00acc1 100%);
+}
+
+.icon-bd { 
+    background: linear-gradient(135deg, #26c6da 0%, #00bcd4 100%);
+}
+
+.icon-dl { 
+    background: linear-gradient(135deg, #03a9f4 0%, #0288d1 100%);
+}
+
+.skill-card:hover .skill-icon {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(0, 188, 212, 0.5);
+}
+
+/* ===== Skill Title ===== */
+.skill-card h3 {
+    font-size: 1.4rem;
+    margin: 0;
+    font-weight: 600;
+    color: #bfeeff;
+}
+
+/* ===== Skill List ===== */
+.skill-card ul {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+.skill-card ul li {
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+    color: #bbb;
+    padding-left: 20px;
+    position: relative;
+}
+
+.skill-card ul li::before {
+    content: "▹";
+    position: absolute;
+    left: 0;
+    color: #00bcd4;
+    font-size: 1.2rem;
+}
+
+.skill-card ul li:hover {
+    color: #00bcd4;
+    padding-left: 25px;
+    transition: all 0.2s ease;
+}
+
+/* ===== Responsive Adjustments ===== */
+@media (max-width: 1024px) {
+    .skills-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 25px;
+        padding: 0 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .skills-header {
+        padding: 20px 20px 0;
+        margin-bottom: 40px;
+    }
+
+    .skills-header h1 {
+        font-size: 2.2rem;
+    }
+
+    .skills-header h2 {
+        font-size: 1rem;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 0 25px;
+        margin-bottom: 60px;
+    }
+
+    .skill-card {
+        padding: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .skills-header h1 {
+        font-size: 1.8rem;
+    }
+
+    .skill-card {
+        padding: 20px;
+    }
+
+    .skill-icon {
+        width: 45px;
+        height: 45px;
+        font-size: 1.3rem;
+    }
+}

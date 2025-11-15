@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataSci Portfolio</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- Remix Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">DataSci <span>Portfolio</span></div>
+            <ul class="nav-links">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="Skills.html">Skills</a></li>
+                <li><a href="Projects.html">Projects</a></li>
+                <li><a href="Experience.html">Experience</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+        <h1 class="fade-in">Taha Saleem</h1>
+        <h2 class="fade-in delay-1">Transforming Data into Insights</h2>
+        <p class="fade-in delay-2">
+            Aspiring Data Scientist passionate about machine learning, statistical analysis,
+            and creating data-driven solutions to complex problems.
+        </p>
+
+        <div class="buttons fade-in delay-3">
+            <a href="Projects.html" class="btn primary">View My Projects</a>
+            <a href="contact.html" class="btn secondary">Get In Touch</a>
+        </div>
+        <div class="socials fade-in delay-4">
+            <a href="https://github.com/Taha-Saleem-43"><i class="ri-github-fill"></i></a>
+            <a href="https://www.linkedin.com/in/taha-saleem-a5697a291/ "><i class="ri-linkedin-box-fill"></i></a>
+          <a href="mailto:tahasaleemdev@gmail.com"><i class="ri-mail-fill"></i></a>
+        </div>
+    </section>
+  <!-- ======== Chat Widget ======== -->
+<div id="ai-chat-widget" aria-hidden="true">
+  <button id="chat-toggle" aria-label="Open chat">
+    <i class="ri-chat-1-line"></i>
+  </button>
+
+  <aside id="chat-panel" aria-hidden="true" role="dialog" aria-label="AI Chat">
+    <header class="chat-header">
+      <div class="chat-title">
+        <i class="ri-robot-line"></i>
+        <span>AI Bot</span>
+      </div>
+      <button id="chat-close" aria-label="Close chat"><i class="ri-close-line"></i></button>
+    </header>
+
+    <div id="chat-messages" class="chat-messages" role="log" aria-live="polite">
+      <div class="chat-system">Hello! 👋 I'm Taha's AI Assistant</div>
+    </div>
+
+    <form id="chat-form" class="chat-form" autocomplete="off">
+      <input id="chat-input" type="text" placeholder="Type a message..." aria-label="Type a message" />
+      <button type="submit" id="chat-send" aria-label="Send message"><i class="ri-send-plane-line"></i></button>
+    </form>
+  </aside>
+</div>
+
+<!-- JS file -->
+<script src="assets/js/chat.js"></script>
+
+</body>
+</html>

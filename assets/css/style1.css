@@ -1,0 +1,107 @@
+/* ===== About Page Styles ===== */
+body.about-page {
+    background: linear-gradient(180deg, #0a0f0f, #101820);
+    color: #e0e0e0;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 100px; /* leave space for fixed navbar */
+}
+
+/* About Section Container */
+.about-container {
+    display: flex;
+    gap: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Left Column - Image */
+.about-image {
+    flex: 1;
+    min-width: 280px;
+    display: flex;
+    justify-content: center;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 188, 212, 0.3);
+}
+
+/* Right Column - Text */
+.about-text {
+    flex: 2;
+    min-width: 300px;
+}
+
+.about-text h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.about-text h2 {
+    font-size: 1.6rem;
+    margin-bottom: 25px;
+    text-align: center;
+    font-weight: 400;
+    color: #7ee0e6;
+}
+
+.about-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Divider */
+.about-divider {
+    border-top: 1px solid rgba(0, 188, 212, 0.3);
+    margin: 30px 0;
+}
+
+/* Details Section */
+.about-details {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.detail-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.detail-item .label {
+    font-weight: 600;
+    color: #00bcd4;
+    margin-bottom: 4px;
+}
+
+.detail-item .value {
+    font-size: 0.95rem;
+    color: #ccc;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .about-container {
+        flex-direction: column;
+        gap: 40px;
+        padding: 40px 20px;
+    }
+
+    .about-text h1 {
+        font-size: 2.5rem;
+    }
+
+    .about-text h2 {
+        font-size: 1.3rem;
+    }
+}

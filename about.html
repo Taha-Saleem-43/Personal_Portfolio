@@ -1,123 +1,114 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>About — Taha Saleem</title>
-  <meta name="description" content="About Taha Saleem — Data Science undergraduate, AI & ML enthusiast.">
-  
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  
-  <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-  
-  <!-- AOS (Animate on Scroll) -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - DataSci Portfolio</title>
 
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Main Navbar + AI Chat Styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
 
-  <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(135deg, #f0f9ff, #e0f2fe, #f9fafb);
-    }
-    .profile-pic {
-      max-width: 200px;
-      border-radius: 50%;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-    }
-    .section-light {
-      background: #ffffff;
-    }
-    .section-alt {
-      background: #f8fafc;
-    }
-  </style>
+    <!-- About Page Specific Styles -->
+    <link rel="stylesheet" href="assets/css/style1.css">
+
+    <!-- Remix Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
-<body>
-  <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top">
-    <div class="container">
-      <a class="navbar-brand fw-bold" href="index.html"><i class="bi bi-braces-asterisk text-primary"></i> Taha Saleem</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="mainNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-          <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-          <li class="nav-item ms-lg-2"><a class="btn btn-primary" href="assets/Resume.pdf" target="_blank">Resume</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
 
-  <!-- ABOUT SECTION -->
-  <section class="py-5 text-center section-light">
-    <div class="container">
-      <h1 class="fw-bold mb-4" data-aos="fade-up">About Me</h1>
-      <img src="assets/img/profile.jpg" alt="Taha Saleem" class="profile-pic mb-4" data-aos="zoom-in">
-      <p class="lead mx-auto" style="max-width: 800px;" data-aos="fade-up" data-aos-delay="200">
-        I’m <strong>Taha Saleem</strong>, a Data Science undergraduate at Punjab University College of Information Technology (PUCIT), expected to graduate in 2027. 
-        Passionate about solving problems with Machine Learning, Artificial Intelligence, and Data Analytics.
-      </p>
-    </div>
-  </section>
+<body class="about-page">
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">DataSci <span>Portfolio</span></div>
+            <ul class="nav-links">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="about.html#about">About</a></li>
+                <li><a href="Skills.html">Skills</a></li>
+                <li><a href="Projects.html">Projects</a></li>
+                <li><a href="Experience.html">Experience</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <!-- EXPERIENCE & HIGHLIGHTS -->
-  <section class="py-5 section-alt">
-    <div class="container">
-      <h2 class="fw-bold mb-4 text-center" data-aos="fade-up">Highlights</h2>
-      <div class="row g-4">
-        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
-          <div class="card shadow-sm h-100 border-0">
-            <div class="card-body text-center">
-              <i class="bi bi-code-slash text-primary fs-1 mb-3"></i>
-              <h5 class="card-title">150+ LeetCode Problems</h5>
-              <p class="card-text">Sharpening problem-solving with Data Structures & Algorithms (DSA).</p>
-            </div>
-          </div>
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about-container">
+        <!-- Left Column: Image -->
+        <div class="about-image">
+            <img src="assets/img/profile.jpg" alt="About Me Image">
         </div>
-        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
-          <div class="card shadow-sm h-100 border-0">
-            <div class="card-body text-center">
-              <i class="bi bi-award text-warning fs-1 mb-3"></i>
-              <h5 class="card-title">Competition Achievements</h5>
-              <p class="card-text">Secured 7th place at MLSA Programming Competition, participated in Riphah Challenge 2024.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
-          <div class="card shadow-sm h-100 border-0">
-            <div class="card-body text-center">
-              <i class="bi bi-lightbulb text-success fs-1 mb-3"></i>
-              <h5 class="card-title">Projects</h5>
-              <p class="card-text">Built systems like Voice-Based Attendance, HR Analytics Predictor, and Summarization System.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- FOOTER -->
-  <footer class="py-4 border-top text-center bg-white">
-    <div class="container">
-      <p class="mb-0">© <span id="year"></span> Taha Saleem — Built with Bootstrap</p>
-    </div>
-  </footer>
+        <!-- Right Column: Text -->
+        <div class="about-text">
+            <h1>About Me</h1>
+            <h2>My journey into the world of data science</h2>
+            <p>Hi! I'm a Data Science student with a passion for uncovering insights hidden within data. 
+               My journey began when I realized the power of data to drive meaningful decisions and solve real-world problems.</p>
 
-  <!-- Scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+            <p>What fascinates me most about data science is the perfect blend of mathematics, programming, and creativity. 
+               Whether it's building predictive models, conducting exploratory analysis, or creating visualizations that tell compelling stories, 
+               I love every aspect of the field.</p>
+
+            <p>Beyond coursework, I'm actively involved in the data science community through Kaggle competitions, 
+               open-source contributions, and constantly learning about emerging technologies in AI and machine learning.</p>
+
+            <p>I'm currently seeking internship opportunities where I can apply my skills, learn from experienced professionals, 
+               and contribute to impactful data-driven projects.</p>
+
+            <div class="about-divider"></div>
+
+            <!-- Details Section -->
+            <div class="about-details">
+                <div class="detail-item">
+                    <div class="label">Location</div>
+                    <div class="value">Lahore, Pakistan</div>
+                </div>
+                <div class="detail-item">
+                    <div class="label">Email</div>
+                    <div class="value">tahasaleemdev@gmail.com</div>
+                </div>
+                <div class="detail-item">
+                    <div class="label">Education</div>
+                    <div class="value">BS Data Science</div>
+                </div>
+                <div class="detail-item">
+                    <div class="label">Availability</div>
+                    <div class="value">Open to Internships</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======== Chat Widget ======== -->
+    <div id="ai-chat-widget" aria-hidden="true">
+        <button id="chat-toggle" aria-label="Open chat">
+            <i class="ri-chat-1-line"></i>
+        </button>
+
+        <aside id="chat-panel" aria-hidden="true" role="dialog" aria-label="AI Chat">
+            <header class="chat-header">
+                <div class="chat-title">
+                    <i class="ri-robot-line"></i>
+                    <span>AI Bot</span>
+                </div>
+                <button id="chat-close" aria-label="Close chat"><i class="ri-close-line"></i></button>
+            </header>
+
+            <div id="chat-messages" class="chat-messages" role="log" aria-live="polite">
+                <div class="chat-system">Hello! 👋 I'm Taha's AI Assistant</div>
+            </div>
+
+            <form id="chat-form" class="chat-form" autocomplete="off">
+                <input id="chat-input" type="text" placeholder="Type a message..." aria-label="Type a message" />
+                <button type="submit" id="chat-send" aria-label="Send message"><i class="ri-send-plane-line"></i></button>
+            </form>
+        </aside>
+    </div>
+
+    <!-- JS file -->
+    <script src="assets/js/chat.js"></script>
 </body>
 </html>

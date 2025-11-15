@@ -1,157 +1,199 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Projects — Taha Saleem</title>
-  <meta name="description" content="Projects of Taha Saleem — Data Science undergraduate, AI & ML enthusiast.">
-  
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  
-  <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-  
-  <!-- AOS (Animate on Scroll) -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - DataSci Portfolio</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style3.css">
+    
+    <!-- Remix Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
 
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="assets/css/style.css">
-
-  <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(135deg, #f0f9ff, #e0f2fe, #f9fafb);
-    }
-    .project-card {
-      transition: transform 0.3s, box-shadow 0.3s;
-      border: none;
-      border-radius: 1rem;
-    }
-    .project-card:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 12px 24px rgba(0,0,0,0.1);
-    }
-    .project-icon {
-      font-size: 2.5rem;
-      color: #0ea5e9;
-    }
-    .section-light { background: #ffffff; }
-    .section-alt { background: #f8fafc; }
-  </style>
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
-  <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top">
-    <div class="container">
-      <a class="navbar-brand fw-bold" href="index.html"><i class="bi bi-braces-asterisk text-primary"></i> Taha Saleem</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="mainNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-          <li class="nav-item"><a class="nav-link active" href="projects.html">Projects</a></li>
-          <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-          <li class="nav-item ms-lg-2"><a class="btn btn-primary" href="assets/Resume.pdf" target="_blank">Resume</a></li>
-        </ul>
-      </div>
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">DataSci <span>Portfolio</span></div>
+            <ul class="nav-links">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="Skills.html">Skills</a></li>
+                <li><a href="Projects.html">Projects</a></li>
+                <li><a href="Experience.html">Experience</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- PROJECTS SECTION -->
+    <section class="projects-section">
+        <div class="section-header">
+            <h1>Featured Projects</h1>
+            <p>A selection of data science projects showcasing machine learning, analytics, and visualization</p>
+        </div>
+
+        <div class="projects-grid">
+            <!-- Project Card 1 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://images.unsplash.com/photo-1589254065878-42c9da997008?w=600&h=400&fit=crop" alt="Voice Based Attendance System">
+                </div>
+                <div class="project-content">
+                    <h3>Voice Based Attendance System</h3>
+                    <p>A Python-based system that records attendance through voice recognition, verifying each user's identity for accurate and secure tracking.</p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">SQL lite</span>
+                        <span class="Customtkinter"></span>
+                        <span class="speech_recognition"></span>
+                    </div>
+                    <div class="project-buttons">
+                        <a href="https://github.com/Taha-Saleem-43/Voice-Base-Attendance-system" class="btn-code"><i class="ri-code-line"></i> Code</a>
+                        <a href="https://youtu.be/O9LQzXWSxAg" class="btn-demo"><i class="ri-external-link-line"></i> Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card 2 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=600&h=400&fit=crop" alt="Titanic Dataset Prediction">
+                </div>
+                <div class="project-content">
+                    <h3>Titanic Dataset Prediction</h3>
+                    <p>A Python-based system that predicts passenger survival on the Titanic using machine learning, analyzing features for accurate outcome prediction.</p>
+                    <div class="project-tags">
+                        <span class="tag">streamlit</span>
+                        <span class="tag">pandas</span>
+                        <span class="tag">scikit-learn</span>
+                        <span class="tag">seaborn</span>
+                    </div>
+                    <div class="project-buttons">
+                        <a href="https://github.com/Taha-Saleem-43/Titanic_Dataset_Project" class="btn-code"><i class="ri-code-line"></i> Code</a>
+                        <a href="https://youtu.be/s5TxpJ4WXag" class="btn-demo"><i class="ri-external-link-line"></i> Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card 3 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&h=400&fit=crop" alt="Healthcare Analytics Dashboard">
+                </div>
+                <div class="project-content">
+                    <h3>Healthcare Analytics Dashboard</h3>
+                    <p>Interactive dashboard for analyzing patient data and visualizing healthcare trends. Built with real-time data processing capabilities.</p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Power BI</span>
+                        <span class="tag">ETL</span>
+                        <span class="tag">SQL</span>
+                    </div>
+                    <div class="project-buttons">
+                        <a href="https://github.com/Taha-Saleem-43/HeathCare-Sector-Patient-Analysis" class="btn-code"><i class="ri-code-line"></i> Code</a>
+                        <a href="https://youtu.be/0or2LT0TPj0" target="_blank" class="btn-demo"><i class="ri-external-link-line"></i> Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card 4 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=600&h=400&fit=crop" alt="Rag App">
+                </div>
+                <div class="project-content">
+                    <h3>Rag based Quiz Generator Bot</h3>
+                    <p>A Python-based RAG system that generates quiz questions dynamically using retrieved knowledge, ensuring accurate and context-aware assessments.</p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">gradio</span>
+                        <span class="tag">sentence-transformers</span>
+                        <span class="tag">scikit-learn</span>
+                    </div>
+                    <div class="project-buttons">
+                        <a href="https://github.com/Taha-Saleem-43/PDF-Analyzer-Chatbot" class="btn-code"><i class="ri-code-line"></i> Code</a>
+                        <a href="https://youtu.be/id-yoHnDxHo" class="btn-demo"><i class="ri-external-link-line"></i> Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card 5 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop" alt="Dyno-Coder Bot">
+                </div>
+                <div class="project-content">
+                    <h3>Dyno-Coder Bot</h3>
+                    <p>A Python-based AI bot that assists with dynamic code generation, debugging, and optimization using real-time contextual understanding.</p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">gradio</span>
+                        <span class="tag">requests</span>
+                        <span class="tag">FastApi</span>
+                    </div>
+                    <div class="project-buttons">
+                        <a href="https://github.com/Taha-Saleem-43/Advance-Coder-ChatBot" class="btn-code"><i class="ri-code-line"></i> Code</a>
+                        <a href="https://youtu.be/xb6wgsHwkT0" class="btn-demo"><i class="ri-external-link-line"></i> Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card 6 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://images.unsplash.com/photo-1535378917042-10a22c95931a?w=600&h=400&fit=crop" alt="Image Classification">
+                </div>
+                <div class="project-content">
+                    <h3>Model Training on "Service Quality Assessment of Orange line Train"</h3>
+                    <p>A Python-based machine learning model trained on the Orange Line Train dataset to analyze and predict operational performance metrics.</p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">pandas</span>
+                        <span class="tag">scikit-learn</span>
+                        <span class="tag">Smote</span>
+                    </div>
+                    <div class="project-buttons">
+                        <a href="https://github.com/Taha-Saleem-43/Model-Training-on-Orange-Line-Train-Dataset" class="btn-code"><i class="ri-code-line"></i> Code</a>
+                        <a href="https://youtu.be/Ue8w63n0sjI" class="btn-demo"><i class="ri-external-link-line"></i> Demo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Chat Widget -->
+    <div id="ai-chat-widget" aria-hidden="true">
+        <button id="chat-toggle" aria-label="Open chat">
+            <i class="ri-chat-1-line"></i>
+        </button>
+
+        <aside id="chat-panel" aria-hidden="true" role="dialog" aria-label="AI Chat">
+            <header class="chat-header">
+                <div class="chat-title">
+                    <i class="ri-robot-line"></i>
+                    <span>AI Bot</span>
+                </div>
+                <button id="chat-close" aria-label="Close chat"><i class="ri-close-line"></i></button>
+            </header>
+
+            <div id="chat-messages" class="chat-messages" role="log" aria-live="polite">
+                <div class="chat-system">Hello! 👋 I'm Taha's AI Assistant</div>
+            </div>
+
+            <form id="chat-form" class="chat-form" autocomplete="off">
+                <input id="chat-input" type="text" placeholder="Type a message..." aria-label="Type a message" />
+                <button type="submit" id="chat-send" aria-label="Send message"><i class="ri-send-plane-line"></i></button>
+            </form>
+        </aside>
     </div>
-  </nav>
 
-  <!-- PROJECTS SECTION -->
-  <section class="py-5 section-light">
-    <div class="container">
-      <h1 class="fw-bold text-center mb-5" data-aos="fade-up">Projects</h1>
-      <div class="row g-4">
-
-        <!-- Project 1 -->
-        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-          <div class="card project-card h-100 shadow-sm">
-            <div class="card-body text-center">
-              <i class="bi bi-mic project-icon mb-3"></i>
-              <h5 class="card-title">Voice-Based Attendance System</h5>
-              <p class="card-text">Python-based system that marks attendance using voice recognition. Built with SpeechRecognition & ML models.</p>
-              <!-- Placeholder for video -->
-              <!-- <iframe width="100%" height="200" src="https://www.youtube.com/embed/demoVideoID" frameborder="0" allowfullscreen></iframe> -->
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 2 -->
-        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
-          <div class="card project-card h-100 shadow-sm">
-            <div class="card-body text-center">
-              <i class="bi bi-people project-icon mb-3"></i>
-              <h5 class="card-title">IBM HR Analytics Predictor</h5>
-              <p class="card-text">ML project predicting employee attrition using Random Forest & Logistic Regression. Explained with SHAP & LIME.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 3 -->
-        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
-          <div class="card project-card h-100 shadow-sm">
-            <div class="card-body text-center">
-              <i class="bi bi-file-text project-icon mb-3"></i>
-              <h5 class="card-title">Article Summarization System</h5>
-              <p class="card-text">Summarizes long blogs/news using extractive (spaCy) and abstractive (BERT/GPT) NLP methods. Evaluated with ROUGE.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 4 -->
-        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
-          <div class="card project-card h-100 shadow-sm">
-            <div class="card-body text-center">
-              <i class="bi bi-train-front project-icon mb-3"></i>
-              <h5 class="card-title">Orange Line Train Survey Analysis</h5>
-              <p class="card-text">Analyzed commuter survey data from Lahore Orange Line. Performed EDA, visualizations, and insights extraction.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 5 -->
-        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
-          <div class="card project-card h-100 shadow-sm">
-            <div class="card-body text-center">
-              <i class="bi bi-browser-chrome project-icon mb-3"></i>
-              <h5 class="card-title">PUCIT Job Portal System</h5>
-              <p class="card-text">Django-based web portal for students to find internships and jobs. Features authentication & database integration.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 6 -->
-        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="600">
-          <div class="card project-card h-100 shadow-sm">
-            <div class="card-body text-center">
-              <i class="bi bi-cpu project-icon mb-3"></i>
-              <h5 class="card-title">Brain MRI Tumor Detection</h5>
-              <p class="card-text">Built a runtime image prediction system to classify brain MRI scans for tumor presence using CNN models.</p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="py-4 border-top text-center bg-white">
-    <div class="container">
-      <p class="mb-0">© <span id="year"></span> Taha Saleem — Built with Bootstrap</p>
-    </div>
-  </footer>
-
-  <!-- Scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+    <!-- JS file -->
+    <script src="assets/js/chat.js"></script>
 </body>
 </html>
