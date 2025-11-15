@@ -25,8 +25,9 @@ Personal_Portfolio/
 │── style.css
 │── script.js
 │── assets/
-│   ├── images
-│   ├── icons
+│   ├── img
+│   ├── css
+│   ├── js 
 │── README.md
 ```
 
